@@ -2,13 +2,12 @@
  Theme Name:   GD Grinnell
  Description:  GD Grinnell Theme
  Template:     portfolio-press
- Version:      1.0.0
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
  Text Domain:  portfolio-press-child
 */
-̉̄
+
 /* Reset
 -------------------------------------------------------------- */
 /*
@@ -340,6 +339,7 @@ body.rtl {
   direction: rtl;
   unicode-bidi: embed; }
 
+
 /* Theme Globals
 -------------------------------------------------------------- */
 html {
@@ -392,6 +392,29 @@ a {
   height: 0;
   content: ""; }
 
+/* added by GDG
+-------------------------------------------------------------- */
+div#comments.comments-area {display: none!important;}
+
+#timelineDiv {
+/*
+	float: left;
+	width: 100%;
+*/
+}
+
+.page-id-128 header#branding div.col-width {
+    max-width: 980px;
+    margin: 0 auto;
+}
+.page-id-128 div#main div.col-width {
+    max-width: 1980px;
+    margin: 0 auto;
+}
+
+.page-id-128 div.tl-span-content h4.tl-font-head {
+    font-size: 15px!important;
+}
 @media (max-width: 1020px) {
   .col-width {
     padding: 0 20px; } }
@@ -402,13 +425,10 @@ a {
   flex: 1 0 auto; }
 
 #main {
-  padding: 40px 0 20px 0; 
+padding: 40px 0 20px 0; 
 background-image: url("bkg.jpg");
-  background-repeat: repeat-y; }
-#timelineDiv {
-	float: left;
-	width: 100%;
-}
+background-repeat: repeat-y; }
+
 
 /* Content */
 #content {
@@ -545,6 +565,8 @@ background-image: url("bkg.jpg");
   position: relative;
   top: 10px;
   right: auto; }
+
+
 
 @media screen and (min-width: 780px) {
   .primary-navigation {
